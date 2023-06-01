@@ -6,12 +6,12 @@ export default function Header() {
       <div className="flex gap-2">
         <h1 className="font-bold text-xl grow">Jackson Garinger</h1>
         <SocialLink
-          text="Github"
+          text="LinkedIn"
           href="https://www.linkedin.com/in/jacksongaringer/"
           alt="My LinkedIn"
         />
         <SocialLink
-          text="LinkedIn"
+          text="GitHub"
           href="https://github.com/garinger"
           alt="My GitHub"
         />

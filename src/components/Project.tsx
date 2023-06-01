@@ -23,7 +23,7 @@ export default function Project({
           alt={`Demo of ${name}`}
         />
         <SocialLink
-          text="Github"
+          text="GitHub"
           href={`https://github.com/garinger/${githubHref}`}
           alt={`Github repo of ${name}`}
         />
