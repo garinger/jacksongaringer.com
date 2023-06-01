@@ -1,35 +1,44 @@
+import Header from "@/components/Header";
+import Project from "@/components/Project";
+import Section from "@/components/Section";
+import SocialLink from "@/components/SocialLink";
+import { BsPaperclip, BsLinkedin } from "react-icons/bs";
+
 export default function Home() {
   return (
-    <div className="m-4">
-      <nav className="my-4">
-        <h1 className="font-bold text-xl">Jackson Garinger</h1>
-        <h2>Dallas, Texas</h2>
-      </nav>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad hic
-        recusandae omnis officiis labore blanditiis consequuntur dolorem aperiam
-        animi fugit tempora ducimus, reiciendis eius asperiores debitis, quae
-        expedita consectetur tenetur iure obcaecati provident quos deleniti
-        quas! Pariatur sequi magni iure voluptatum quo necessitatibus ullam
-        iusto est nobis rem ipsum suscipit, omnis magnam impedit saepe
-        voluptate, ad cum perferendis tenetur, accusantium totam ut. Eaque
-        ipsum, quae impedit error aspernatur corporis dignissimos est doloribus
-        rerum esse consectetur animi dolorem sed incidunt alias quidem quibusdam
-        blanditiis provident enim. Laboriosam, nesciunt! Assumenda aliquam,
-        corporis numquam, voluptates libero deserunt, repellat vero ipsa
-        quisquam temporibus tempore nostrum delectus neque deleniti magni quasi.
-        Nisi minima iure quis rem mollitia. Consequuntur commodi pariatur natus
-        ratione minima minus, quod repellat repudiandae molestias cupiditate
-        distinctio nulla accusantium ullam eaque odio ipsa architecto assumenda
-        odit mollitia labore molestiae aperiam quam saepe? Corrupti repudiandae
-        doloremque eos nobis exercitationem asperiores nesciunt pariatur
-        inventore aperiam dolorem iusto dolore ullam mollitia suscipit, nam
-        nulla tempore repellat quisquam similique eveniet? Quisquam aspernatur
-        mollitia maxime eaque perferendis tempore incidunt itaque non sint sequi
-        laboriosam magni totam, magnam dignissimos sed et nulla quas. Dolore,
-        dolores? Dicta non, quidem error odit autem aspernatur ex totam pariatur
-        natus, quisquam esse!
-      </p>
-    </div>
+    <main className="flex justify-center">
+      <div className="m-8 sm:w-2/3 md:w-2/3 xl:w-2/5">
+        <Header />
+        <Section title="Projects">
+          <Project name="Blackjack" demoHref="blackjack" githubHref="blackjack">
+            A react app that lets you play blackjack.
+          </Project>
+          <Project name="Dog Finder" demoHref="fetch" githubHref="fetch">
+            A react app that lets you sort through dogs to find the right match.
+          </Project>
+        </Section>
+        <Section title="Contact me">
+          <SocialLink
+            className="my-1"
+            text="Resume"
+            href="/resume.pdf"
+            alt="My resume"
+          >
+            <BsPaperclip />
+          </SocialLink>
+          <SocialLink
+            className="my-1"
+            text="jagaring@ttu.edu"
+            href="mailto:jagaring@ttu.edu"
+            alt="My email"
+          />
+          <SocialLink
+            className="my-1"
+            text="469-525-7086"
+            alt="My phone number"
+          />
+        </Section>
+      </div>
+    </main>
   );
 }
