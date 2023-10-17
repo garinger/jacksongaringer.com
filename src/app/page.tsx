@@ -2,19 +2,29 @@ import Header from "@/components/Header";
 import Project from "@/components/Project";
 import Section from "@/components/Section";
 import SocialLink from "@/components/SocialLink";
-import { BsPaperclip, BsLinkedin } from "react-icons/bs";
+import { BsPaperclip } from "react-icons/bs";
 
 export default function Home() {
   return (
     <main className="flex justify-center">
       <div className="m-8 sm:w-2/3 md:w-2/3 xl:w-2/5">
         <Header />
-        <Section title="Projects">
-          <Project name="Blackjack" demoHref="blackjack" githubHref="blackjack">
-            A react app that lets you play blackjack.
+        <Section title="Projects" className="flex flex-col gap-4">
+          <Project
+            name="Renderer"
+            gifSrc="/renderer.gif"
+            demoHref="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            githubHref="Renderer"
+          >
+            A super awesome 3D renderer written in C++
           </Project>
-          <Project name="Dog Finder" demoHref="fetch" githubHref="fetch">
-            A react app that lets you sort through dogs to find the right match.
+          <Project
+            name="Blackjack"
+            gifSrc="/blackjack.gif"
+            demoHref="https://blackjack.jacksongaringer.com"
+            githubHref="Blackjack"
+          >
+            A neat little Blackjack game built in React
           </Project>
         </Section>
         <Section title="Contact me">
@@ -28,8 +38,8 @@ export default function Home() {
           </SocialLink>
           <SocialLink
             className="my-1"
-            text="jagaring@ttu.edu"
-            href="mailto:jagaring@ttu.edu"
+            text="jackson.garinger@gmail.com"
+            href="mailto:jackson.garinger@gmail.com"
             alt="My email"
           />
           <SocialLink

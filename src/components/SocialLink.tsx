@@ -13,7 +13,7 @@ export default function SocialLink({ text, href, className, children }: Props) {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={`${className} ${href && "underline"}`}
+        className={`${className} ${href && "underline"} text-lg`}
       >
         {text}
       </a>
