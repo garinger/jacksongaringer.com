@@ -24,7 +24,6 @@ export default function Project({
           width={0}
           height={0}
           priority={true}
-          quality={100}
           alt="Picture of the author"
           className="rounded w-64 h-auto"
         />
